@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 data_sources/
+portfolio-site/
+portfolio-site.tar.gz
 .streamlit/secrets.toml
 projetos/*/data/processed/*.csv
 projetos/*/artifacts/*.joblib
