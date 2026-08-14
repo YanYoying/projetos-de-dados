@@ -1,5 +1,7 @@
 # E-commerce 360°
 
+![Dashboard executivo](../../assets/screenshots/ecommerce-360.png)
+
 ## Problema de negócio
 
 Quais produtos, vendedores e regiões sustentam receita, margem e satisfação?

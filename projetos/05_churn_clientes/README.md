@@ -1,5 +1,7 @@
 # Churn de clientes
 
+![Dashboard de churn](../../assets/screenshots/churn-clientes.png)
+
 ## Problema de negócio
 
 Quais clientes têm maior risco de abandonar a empresa?
