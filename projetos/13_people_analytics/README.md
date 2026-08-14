@@ -26,8 +26,8 @@ Os arquivos brutos não são versionados. Consulte `../../FONTES.md` e execute o
 
 ```json
 {
-  "accuracy": 0.7459,
-  "roc_auc": 0.8445
+  "accuracy": 0.7676,
+  "roc_auc": 0.8494
 }
 ```
 

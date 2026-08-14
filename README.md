@@ -29,7 +29,7 @@ Comece por estes cinco estudos. Eles cobrem BI, SQL, Python, machine learning e 
 | Projeto | Competência principal | Evidência |
 |---|---|---|
 | [E-commerce 360°](projetos/01_ecommerce_360/) | Dashboard executivo e SQL | R$ 4,06 milhões analisados em 25 mil pedidos |
-| [Churn de clientes](projetos/05_churn_clientes/) | Classificação em Python | ROC AUC de 0,956 em dados reais de telecom |
+| [Churn de clientes](projetos/05_churn_clientes/) | Classificação em Python | ROC AUC de 0,959 em dados reais de telecom |
 | [Funil de marketing](projetos/06_funil_marketing/) | Marketing analytics | 8 mil leads e conversão observada de 10,5% |
 | [Demanda e estoque](projetos/10_demanda_estoque/) | Forecast e varejo | 25 mil transações reais de varejo |
 | [Pipeline empresarial](projetos/20_pipeline_empresarial/) | ETL e qualidade | Pipeline reproduzível com relatório de qualidade |

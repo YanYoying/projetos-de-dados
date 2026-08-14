@@ -1,322 +1,248 @@
 [
   {
     "project": "01_ecommerce_360",
-    "rows": 6520,
+    "rows": 1055,
     "columns": [
-      "month",
       "region",
       "category",
-      "revenue",
-      "profit",
-      "satisfaction",
-      "previous_revenue",
-      "profit_rank",
-      "revenue_growth_pct",
-      "margin_pct"
+      "pedidos",
+      "receita",
+      "resultado",
+      "satisfacao_media",
+      "taxa_atraso",
+      "margem_pct",
+      "ranking_resultado"
     ]
   },
   {
     "project": "02_desempenho_logistico",
-    "rows": 6549,
+    "rows": 76,
     "columns": [
-      "month",
       "region",
-      "category",
-      "revenue",
-      "profit",
-      "satisfaction",
-      "previous_revenue",
-      "profit_rank",
-      "revenue_growth_pct",
-      "margin_pct"
+      "faixa_atraso",
+      "pedidos",
+      "tempo_total_medio",
+      "satisfacao_media",
+      "participacao_pct"
     ]
   },
   {
     "project": "03_segmentacao_rfm",
-    "rows": 6447,
+    "rows": 4,
     "columns": [
-      "month",
-      "region",
-      "category",
-      "revenue",
-      "profit",
-      "satisfaction",
-      "previous_revenue",
-      "profit_rank",
-      "revenue_growth_pct",
-      "margin_pct"
+      "quartil_valor",
+      "clientes",
+      "receita_media",
+      "satisfacao_media",
+      "atraso_medio"
     ]
   },
   {
     "project": "04_previsao_vendas",
-    "rows": 6531,
+    "rows": 24,
     "columns": [
       "month",
-      "region",
-      "category",
-      "revenue",
-      "profit",
-      "satisfaction",
-      "previous_revenue",
-      "profit_rank",
-      "revenue_growth_pct",
-      "margin_pct"
+      "receita",
+      "receita_anterior",
+      "media_movel_3m",
+      "variacao_pct"
     ]
   },
   {
     "project": "05_churn_clientes",
-    "rows": 4,
+    "rows": 6,
     "columns": [
-      "month",
-      "region",
-      "category",
-      "revenue",
-      "profit",
-      "satisfaction",
-      "previous_revenue",
-      "profit_rank",
-      "revenue_growth_pct",
-      "margin_pct"
+      "plano",
+      "uso",
+      "clientes",
+      "churns",
+      "valor_medio",
+      "churn_pct"
     ]
   },
   {
     "project": "06_funil_marketing",
-    "rows": 1121,
+    "rows": 234,
     "columns": [
-      "month",
-      "region",
-      "category",
-      "revenue",
-      "profit",
-      "satisfaction",
-      "previous_revenue",
-      "profit_rank",
-      "revenue_growth_pct",
-      "margin_pct"
+      "origem",
+      "landing_page",
+      "leads",
+      "negocios",
+      "receita_declarada",
+      "conversao_pct",
+      "ranking_landing"
     ]
   },
   {
     "project": "07_propensao_compra",
-    "rows": 47,
+    "rows": 24,
     "columns": [
-      "month",
-      "region",
-      "category",
-      "revenue",
-      "profit",
-      "satisfaction",
-      "previous_revenue",
-      "profit_rank",
-      "revenue_growth_pct",
-      "margin_pct"
+      "ocupacao",
+      "contato",
+      "clientes",
+      "conversoes",
+      "conversao_pct",
+      "contatos_medios",
+      "dias_desde_contato_anterior"
     ]
   },
   {
     "project": "08_rentabilidade_comercial",
-    "rows": 6486,
+    "rows": 73,
     "columns": [
-      "month",
-      "region",
       "category",
-      "revenue",
-      "profit",
-      "satisfaction",
-      "previous_revenue",
-      "profit_rank",
-      "revenue_growth_pct",
-      "margin_pct"
+      "pedidos",
+      "receita",
+      "resultado",
+      "margem_pct",
+      "status"
     ]
   },
   {
     "project": "09_elasticidade_preco",
-    "rows": 14286,
+    "rows": 169,
     "columns": [
-      "month",
-      "region",
       "category",
-      "revenue",
-      "profit",
-      "satisfaction",
-      "previous_revenue",
-      "profit_rank",
-      "revenue_growth_pct",
-      "margin_pct"
+      "faixa_preco",
+      "transacoes",
+      "preco_medio",
+      "quantidade_media",
+      "receita"
     ]
   },
   {
     "project": "10_demanda_estoque",
-    "rows": 14324,
+    "rows": 2997,
     "columns": [
-      "month",
-      "region",
       "category",
-      "revenue",
-      "profit",
-      "satisfaction",
-      "previous_revenue",
-      "profit_rank",
-      "revenue_growth_pct",
-      "margin_pct"
+      "demanda_media",
+      "volatilidade",
+      "pico",
+      "coef_variacao",
+      "ranking_risco"
     ]
   },
   {
     "project": "11_cesta_compras",
-    "rows": 6500,
+    "rows": 54,
     "columns": [
-      "month",
-      "region",
       "category",
-      "revenue",
-      "profit",
-      "satisfaction",
-      "previous_revenue",
-      "profit_rank",
-      "revenue_growth_pct",
-      "margin_pct"
+      "pedidos",
+      "cestas_multivendedor",
+      "cesta_complexa_pct",
+      "itens_medios",
+      "ticket_medio"
     ]
   },
   {
     "project": "12_voz_cliente",
-    "rows": 6542,
+    "rows": 75,
     "columns": [
-      "month",
-      "region",
       "category",
-      "revenue",
-      "profit",
-      "satisfaction",
-      "previous_revenue",
-      "profit_rank",
-      "revenue_growth_pct",
-      "margin_pct"
+      "entrega",
+      "avaliacoes",
+      "negativas_pct",
+      "tamanho_comentario",
+      "nota_media"
     ]
   },
   {
     "project": "13_people_analytics",
-    "rows": 257,
+    "rows": 23,
     "columns": [
-      "month",
-      "region",
-      "category",
-      "revenue",
-      "profit",
-      "satisfaction",
-      "previous_revenue",
-      "profit_rank",
-      "revenue_growth_pct",
-      "margin_pct"
+      "motivo",
+      "escolaridade",
+      "registros",
+      "horas_ausencia",
+      "ausencia_alta_pct",
+      "tempo_servico"
     ]
   },
   {
     "project": "14_inadimplencia",
     "rows": 184,
     "columns": [
-      "month",
-      "region",
-      "category",
-      "revenue",
-      "profit",
-      "satisfaction",
-      "previous_revenue",
-      "profit_rank",
-      "revenue_growth_pct",
-      "margin_pct"
+      "date",
+      "inadimplencia",
+      "valor_12m_atras",
+      "variacao_pp_12m",
+      "media_movel_6m"
     ]
   },
   {
     "project": "15_mobilidade_urbana",
-    "rows": 600,
+    "rows": 713,
     "columns": [
-      "month",
-      "region",
-      "category",
-      "revenue",
-      "profit",
-      "satisfaction",
-      "previous_revenue",
-      "profit_rank",
-      "revenue_growth_pct",
-      "margin_pct"
+      "zona_origem",
+      "hora",
+      "corridas",
+      "passageiros",
+      "distancia_media",
+      "duracao_media_min",
+      "valor_medio"
     ]
   },
   {
     "project": "16_bicicletas_compartilhadas",
-    "rows": 171,
+    "rows": 2834,
     "columns": [
-      "month",
-      "region",
-      "category",
-      "revenue",
-      "profit",
-      "satisfaction",
-      "previous_revenue",
-      "profit_rank",
-      "revenue_growth_pct",
-      "margin_pct"
+      "estacao_origem",
+      "hora",
+      "tipo_usuario",
+      "viagens",
+      "duracao_media_min",
+      "ranking_estacao"
     ]
   },
   {
     "project": "17_analytics_digital",
-    "rows": 1121,
+    "rows": 234,
     "columns": [
-      "month",
-      "region",
-      "category",
-      "revenue",
-      "profit",
-      "satisfaction",
-      "previous_revenue",
-      "profit_rank",
-      "revenue_growth_pct",
-      "margin_pct"
+      "origem",
+      "landing_page",
+      "sessoes_qualificadas",
+      "conversoes",
+      "taxa_conversao",
+      "valor_declarado"
     ]
   },
   {
     "project": "18_saude_publica",
-    "rows": 64,
+    "rows": 65,
     "columns": [
-      "month",
-      "region",
-      "category",
-      "revenue",
-      "profit",
-      "satisfaction",
-      "previous_revenue",
-      "profit_rank",
-      "revenue_growth_pct",
-      "margin_pct"
+      "date",
+      "taxa",
+      "taxa_anterior",
+      "variacao_anual",
+      "variacao_pct"
     ]
   },
   {
     "project": "19_anomalias_financeiras",
-    "rows": 14,
+    "rows": 65,
     "columns": [
-      "month",
-      "region",
-      "category",
-      "revenue",
-      "profit",
-      "satisfaction",
-      "previous_revenue",
-      "profit_rank",
-      "revenue_growth_pct",
-      "margin_pct"
+      "faixa_limite",
+      "sexo",
+      "escolaridade",
+      "clientes",
+      "default_pct",
+      "limite_medio",
+      "atraso_previo"
     ]
   },
   {
     "project": "20_pipeline_empresarial",
-    "rows": 6571,
+    "rows": 1,
     "columns": [
-      "month",
-      "region",
-      "category",
-      "revenue",
-      "profit",
-      "satisfaction",
-      "previous_revenue",
-      "profit_rank",
-      "revenue_growth_pct",
-      "margin_pct"
+      "linhas",
+      "ids_unicos",
+      "ids_nulos",
+      "receitas_negativas",
+      "receita",
+      "resultado",
+      "data_maxima",
+      "duplicidades",
+      "status_publicacao"
     ]
   }
 ]

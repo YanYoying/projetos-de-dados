@@ -1,18 +1,8 @@
--- Análise executiva avançada: CTEs, janela, ranking e variação temporal
-WITH monthly AS (
-    SELECT month, region, category,
-           SUM(revenue) AS revenue, SUM(profit) AS profit,
-           AVG(satisfaction) AS satisfaction
-    FROM read_csv_auto('data/processed/analytics.csv')
-    GROUP BY month, region, category
-), trends AS (
-    SELECT *,
-           LAG(revenue) OVER (PARTITION BY region, category ORDER BY month) AS previous_revenue,
-           RANK() OVER (PARTITION BY month ORDER BY profit DESC) AS profit_rank
-    FROM monthly
-)
-SELECT *,
-       ROUND(100 * (revenue - previous_revenue) / NULLIF(previous_revenue, 0), 2) AS revenue_growth_pct,
-       ROUND(100 * profit / NULLIF(revenue, 0), 2) AS margin_pct
-FROM trends
-ORDER BY month DESC, profit_rank;
+-- Relação entre faixa de preço e unidades vendidas
+WITH base AS (SELECT * FROM read_csv_auto('data/processed/analytics.csv')),
+faixas AS (
+ SELECT category, NTILE(5) OVER(PARTITION BY category ORDER BY unit_value) faixa_preco,
+        unit_value, quantity, revenue FROM base)
+SELECT category, faixa_preco, COUNT(*) transacoes, AVG(unit_value) preco_medio,
+       AVG(quantity) quantidade_media, SUM(revenue) receita
+FROM faixas GROUP BY category, faixa_preco HAVING COUNT(*)>=10 ORDER BY category, faixa_preco;

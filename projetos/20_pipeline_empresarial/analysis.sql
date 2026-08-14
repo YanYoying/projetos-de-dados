@@ -1,18 +1,11 @@
--- Análise executiva avançada: CTEs, janela, ranking e variação temporal
-WITH monthly AS (
-    SELECT month, region, category,
-           SUM(revenue) AS revenue, SUM(profit) AS profit,
-           AVG(satisfaction) AS satisfaction
-    FROM read_csv_auto('data/processed/analytics.csv')
-    GROUP BY month, region, category
-), trends AS (
-    SELECT *,
-           LAG(revenue) OVER (PARTITION BY region, category ORDER BY month) AS previous_revenue,
-           RANK() OVER (PARTITION BY month ORDER BY profit DESC) AS profit_rank
-    FROM monthly
-)
-SELECT *,
-       ROUND(100 * (revenue - previous_revenue) / NULLIF(previous_revenue, 0), 2) AS revenue_growth_pct,
-       ROUND(100 * profit / NULLIF(revenue, 0), 2) AS margin_pct
-FROM trends
-ORDER BY month DESC, profit_rank;
+-- Contrato de qualidade e reconciliação da camada analítica
+WITH base AS (SELECT * FROM read_csv_auto('data/processed/analytics.csv')),
+checks AS (
+ SELECT COUNT(*) linhas, COUNT(DISTINCT record_id) ids_unicos,
+        SUM(CASE WHEN record_id IS NULL THEN 1 ELSE 0 END) ids_nulos,
+        SUM(CASE WHEN revenue<0 THEN 1 ELSE 0 END) receitas_negativas,
+        SUM(revenue) receita, SUM(profit) resultado, MAX(date) data_maxima
+ FROM base)
+SELECT *, linhas-ids_unicos duplicidades,
+       CASE WHEN ids_nulos=0 AND receitas_negativas=0 THEN 'aprovado' ELSE 'bloqueado' END status_publicacao
+FROM checks;

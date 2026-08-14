@@ -1,18 +1,6 @@
--- Análise executiva avançada: CTEs, janela, ranking e variação temporal
-WITH monthly AS (
-    SELECT month, region, category,
-           SUM(revenue) AS revenue, SUM(profit) AS profit,
-           AVG(satisfaction) AS satisfaction
-    FROM read_csv_auto('data/processed/analytics.csv')
-    GROUP BY month, region, category
-), trends AS (
-    SELECT *,
-           LAG(revenue) OVER (PARTITION BY region, category ORDER BY month) AS previous_revenue,
-           RANK() OVER (PARTITION BY month ORDER BY profit DESC) AS profit_rank
-    FROM monthly
-)
-SELECT *,
-       ROUND(100 * (revenue - previous_revenue) / NULLIF(previous_revenue, 0), 2) AS revenue_growth_pct,
-       ROUND(100 * profit / NULLIF(revenue, 0), 2) AS margin_pct
-FROM trends
-ORDER BY month DESC, profit_rank;
+-- Corridas, duração e valor por zona e hora
+WITH base AS (SELECT *, EXTRACT(hour FROM date) hora FROM read_csv_auto('data/processed/analytics.csv'))
+SELECT region zona_origem, hora, COUNT(*) corridas, AVG(quantity) passageiros,
+       AVG(engagement) distancia_media, AVG(target_value) duracao_media_min,
+       AVG(revenue) valor_medio
+FROM base GROUP BY zona_origem, hora HAVING COUNT(*)>=10 ORDER BY corridas DESC;
