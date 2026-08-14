@@ -18,7 +18,7 @@
 - Base: 3.150 clientes reais de uma operadora iraniana, disponibilizados pela UCI.
 - Churn observado: **15,71%**.
 - Modelo: Random Forest com pré-processamento categórico e numérico.
-- Resultado de teste: **ROC AUC 0,9555** e acurácia **91,62%**.
+- Resultado de teste: **ROC AUC 0,9586** e acurácia **91,88%**.
 - Decisão sugerida: ordenar ações de retenção pela combinação entre risco, valor do cliente e custo do incentivo.
 
 ## 3. Funil de marketing
@@ -34,7 +34,7 @@
 - Base: amostra determinística de 25.000 transações reais do UCI Online Retail.
 - Receita analisada: **£ 477.432,20**; margem estimada sob hipótese explícita de custo: **£ 167.101,27**.
 - `REGENCY CAKESTAND 3 TIER` liderou a receita por descrição na amostra.
-- Erro absoluto médio do modelo: **0,27 unidade** na divisão de teste.
+- Erro absoluto médio do modelo: **7,15 unidades** na divisão de teste, após a remoção de variáveis que reproduziam diretamente o alvo.
 - Decisão sugerida: combinar previsão com tempo de reposição e variabilidade para definir estoque de segurança.
 
 ## 5. Pipeline empresarial

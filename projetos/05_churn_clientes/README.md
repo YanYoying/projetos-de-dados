@@ -1,7 +1,5 @@
 # Churn de clientes
 
-![Dashboard de churn](../../assets/screenshots/churn-clientes.png)
-
 ## Problema de negócio
 
 Quais clientes têm maior risco de abandonar a empresa?
@@ -28,8 +26,8 @@ Os arquivos brutos não são versionados. Consulte `../../FONTES.md` e execute o
 
 ```json
 {
-  "accuracy": 0.9162,
-  "roc_auc": 0.9555
+  "accuracy": 0.9188,
+  "roc_auc": 0.9586
 }
 ```
 

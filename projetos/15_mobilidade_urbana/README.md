@@ -26,7 +26,7 @@ Os arquivos brutos não são versionados. Consulte `../../FONTES.md` e execute o
 
 ```json
 {
-  "mae": 1.67
+  "mae": 2.97
 }
 ```
 

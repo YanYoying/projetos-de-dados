@@ -1,18 +1,8 @@
--- Análise executiva avançada: CTEs, janela, ranking e variação temporal
-WITH monthly AS (
-    SELECT month, region, category,
-           SUM(revenue) AS revenue, SUM(profit) AS profit,
-           AVG(satisfaction) AS satisfaction
-    FROM read_csv_auto('data/processed/analytics.csv')
-    GROUP BY month, region, category
-), trends AS (
-    SELECT *,
-           LAG(revenue) OVER (PARTITION BY region, category ORDER BY month) AS previous_revenue,
-           RANK() OVER (PARTITION BY month ORDER BY profit DESC) AS profit_rank
-    FROM monthly
-)
-SELECT *,
-       ROUND(100 * (revenue - previous_revenue) / NULLIF(previous_revenue, 0), 2) AS revenue_growth_pct,
-       ROUND(100 * profit / NULLIF(revenue, 0), 2) AS margin_pct
-FROM trends
-ORDER BY month DESC, profit_rank;
+-- Tendência da inadimplência da carteira de crédito
+WITH serie AS (
+ SELECT date, target_value inadimplencia,
+        LAG(target_value,12) OVER(ORDER BY date) valor_12m_atras FROM read_csv_auto('data/processed/analytics.csv'))
+SELECT date, inadimplencia, valor_12m_atras,
+       ROUND(inadimplencia-valor_12m_atras,2) variacao_pp_12m,
+       AVG(inadimplencia) OVER(ORDER BY date ROWS BETWEEN 5 PRECEDING AND CURRENT ROW) media_movel_6m
+FROM serie ORDER BY date;

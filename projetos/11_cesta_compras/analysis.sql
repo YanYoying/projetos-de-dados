@@ -1,18 +1,6 @@
--- Análise executiva avançada: CTEs, janela, ranking e variação temporal
-WITH monthly AS (
-    SELECT month, region, category,
-           SUM(revenue) AS revenue, SUM(profit) AS profit,
-           AVG(satisfaction) AS satisfaction
-    FROM read_csv_auto('data/processed/analytics.csv')
-    GROUP BY month, region, category
-), trends AS (
-    SELECT *,
-           LAG(revenue) OVER (PARTITION BY region, category ORDER BY month) AS previous_revenue,
-           RANK() OVER (PARTITION BY month ORDER BY profit DESC) AS profit_rank
-    FROM monthly
-)
-SELECT *,
-       ROUND(100 * (revenue - previous_revenue) / NULLIF(previous_revenue, 0), 2) AS revenue_growth_pct,
-       ROUND(100 * profit / NULLIF(revenue, 0), 2) AS margin_pct
-FROM trends
-ORDER BY month DESC, profit_rank;
+-- Pedidos com múltiplos vendedores como proxy de cesta complexa
+WITH base AS (SELECT * FROM read_csv_auto('data/processed/analytics.csv'))
+SELECT category, COUNT(*) pedidos, SUM(target_class) cestas_multivendedor,
+       ROUND(100*AVG(target_class),2) cesta_complexa_pct, AVG(quantity) itens_medios,
+       AVG(revenue) ticket_medio
+FROM base GROUP BY category HAVING COUNT(*)>=20 ORDER BY cesta_complexa_pct DESC;

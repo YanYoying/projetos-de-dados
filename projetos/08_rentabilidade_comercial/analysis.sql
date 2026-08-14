@@ -1,18 +1,7 @@
--- Análise executiva avançada: CTEs, janela, ranking e variação temporal
-WITH monthly AS (
-    SELECT month, region, category,
-           SUM(revenue) AS revenue, SUM(profit) AS profit,
-           AVG(satisfaction) AS satisfaction
-    FROM read_csv_auto('data/processed/analytics.csv')
-    GROUP BY month, region, category
-), trends AS (
-    SELECT *,
-           LAG(revenue) OVER (PARTITION BY region, category ORDER BY month) AS previous_revenue,
-           RANK() OVER (PARTITION BY month ORDER BY profit DESC) AS profit_rank
-    FROM monthly
-)
-SELECT *,
-       ROUND(100 * (revenue - previous_revenue) / NULLIF(previous_revenue, 0), 2) AS revenue_growth_pct,
-       ROUND(100 * profit / NULLIF(revenue, 0), 2) AS margin_pct
-FROM trends
-ORDER BY month DESC, profit_rank;
+-- Categorias com receita alta e resultado insuficiente
+WITH categorias AS (
+ SELECT category, COUNT(*) pedidos, SUM(revenue) receita, SUM(profit) resultado
+ FROM read_csv_auto('data/processed/analytics.csv') GROUP BY category)
+SELECT *, ROUND(100*resultado/NULLIF(receita,0),2) margem_pct,
+       CASE WHEN resultado<0 THEN 'rever' WHEN resultado/NULLIF(receita,0)<0.15 THEN 'atencao' ELSE 'saudavel' END status
+FROM categorias ORDER BY resultado ASC;

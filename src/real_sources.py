@@ -255,7 +255,7 @@ def load_online_retail(slug: str) -> tuple[pd.DataFrame, str]:
     df["revenue"] = raw.Quantity * raw.UnitPrice
     df["profit"] = df.revenue - df.cost * raw.Quantity
     df["target_class"] = (raw.Quantity > raw.Quantity.median()).astype(int)
-    df["target_value"] = raw.Quantity if slug == "10_demanda_estoque" else df.revenue
+    df["target_value"] = raw.Quantity
     return _finish(df), "UCI Online Retail, transações reais de varejo britânico"
 
 
@@ -317,7 +317,7 @@ def load_taxi() -> tuple[pd.DataFrame, str]:
     df["revenue"] = raw.total_amount
     df["profit"] = raw.fare_amount - raw.tolls_amount
     df["target_class"] = (raw.tip_amount > 0).astype(int)
-    df["target_value"] = raw.total_amount
+    df["target_value"] = df["delay_days"]
     return _finish(df), "NYC TLC Yellow Taxi Trip Records, janeiro de 2025"
 
 

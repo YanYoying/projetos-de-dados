@@ -1,7 +1,5 @@
 # E-commerce 360°
 
-![Dashboard executivo](../../assets/screenshots/ecommerce-360.png)
-
 ## Problema de negócio
 
 Quais produtos, vendedores e regiões sustentam receita, margem e satisfação?
@@ -28,7 +26,7 @@ Os arquivos brutos não são versionados. Consulte `../../FONTES.md` e execute o
 
 ```json
 {
-  "mae": 2.52
+  "mae": 103.2
 }
 ```
 
