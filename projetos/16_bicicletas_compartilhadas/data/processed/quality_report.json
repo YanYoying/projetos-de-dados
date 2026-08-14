@@ -1,8 +1,10 @@
 {
-  "rows": 1200,
+  "rows": 25000,
   "columns": 17,
   "duplicate_ids": 0,
   "missing_values": 0,
-  "revenue": 697297.62,
-  "profit": 309605.53
+  "revenue": 37070.980336666675,
+  "profit": 27803.235252500002,
+  "source": "Citi Bike System Data, Jersey City, janeiro de 2025",
+  "data_mode": "real"
 }

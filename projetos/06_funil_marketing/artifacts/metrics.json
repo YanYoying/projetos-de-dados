@@ -1,4 +1,4 @@
 {
-  "accuracy": 0.6533,
-  "roc_auc": 0.7014
+  "accuracy": 0.658,
+  "roc_auc": 0.6743
 }

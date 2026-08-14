@@ -1,8 +1,10 @@
 {
-  "rows": 1200,
+  "rows": 740,
   "columns": 17,
-  "duplicate_ids": 0,
+  "duplicate_ids": 704,
   "missing_values": 0,
-  "revenue": 732935.47,
-  "profit": 330163.6
+  "revenue": 200902.774,
+  "profit": 37118.774,
+  "source": "UCI Absenteeism at Work, registros reais de uma empresa brasileira",
+  "data_mode": "real"
 }

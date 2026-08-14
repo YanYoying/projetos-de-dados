@@ -3,310 +3,350 @@
     "project": "01_ecommerce_360",
     "status": "ok",
     "quality": {
-      "rows": 1200,
-      "columns": 17,
+      "rows": 25000,
+      "columns": 37,
       "duplicate_ids": 0,
-      "missing_values": 0,
-      "revenue": 731395.1799999999,
-      "profit": 334644.6
+      "missing_values": 17125,
+      "revenue": 4063762.4699999997,
+      "profit": 3501324.6500000004,
+      "source": "Olist Brazilian E-Commerce (Kaggle, dados comerciais anonimizados)",
+      "data_mode": "real"
     },
     "metrics": {
-      "mae": 57.42
+      "mae": 2.52
     }
   },
   {
     "project": "02_desempenho_logistico",
     "status": "ok",
     "quality": {
-      "rows": 1200,
-      "columns": 17,
+      "rows": 25000,
+      "columns": 37,
       "duplicate_ids": 0,
-      "missing_values": 0,
-      "revenue": 714013.51,
-      "profit": 332107.17
+      "missing_values": 17000,
+      "revenue": 4010060.5200000005,
+      "profit": 3445519.55,
+      "source": "Olist Brazilian E-Commerce (Kaggle, dados comerciais anonimizados)",
+      "data_mode": "real"
     },
     "metrics": {
-      "mae": 62.25
+      "mae": 4.05
     }
   },
   {
     "project": "03_segmentacao_rfm",
     "status": "ok",
     "quality": {
-      "rows": 1200,
-      "columns": 17,
+      "rows": 25000,
+      "columns": 37,
       "duplicate_ids": 0,
-      "missing_values": 0,
-      "revenue": 711043.4,
-      "profit": 340261.65
+      "missing_values": 17135,
+      "revenue": 4030459.54,
+      "profit": 3463894.4400000004,
+      "source": "Olist Brazilian E-Commerce (Kaggle, dados comerciais anonimizados)",
+      "data_mode": "real"
     },
     "metrics": {
-      "accuracy": 0.6,
-      "roc_auc": 0.6236
+      "accuracy": 0.9882,
+      "roc_auc": 0.9991
     }
   },
   {
     "project": "04_previsao_vendas",
     "status": "ok",
     "quality": {
-      "rows": 1200,
-      "columns": 17,
+      "rows": 25000,
+      "columns": 37,
       "duplicate_ids": 0,
-      "missing_values": 0,
-      "revenue": 707892.1599999999,
-      "profit": 333595.56
+      "missing_values": 17132,
+      "revenue": 3999719.25,
+      "profit": 3436467.04,
+      "source": "Olist Brazilian E-Commerce (Kaggle, dados comerciais anonimizados)",
+      "data_mode": "real"
     },
     "metrics": {
-      "mae": 52.22
+      "mae": 4.03
     }
   },
   {
     "project": "05_churn_clientes",
     "status": "ok",
     "quality": {
-      "rows": 1200,
+      "rows": 3150,
       "columns": 17,
       "duplicate_ids": 0,
       "missing_values": 0,
-      "revenue": 750131.7999999999,
-      "profit": 357275.58999999997
+      "revenue": 2970.0,
+      "profit": 2729.0,
+      "source": "UCI Iranian Churn Dataset, dados reais de uma operadora",
+      "data_mode": "real"
     },
     "metrics": {
-      "accuracy": 0.5833,
-      "roc_auc": 0.6425
+      "accuracy": 0.9162,
+      "roc_auc": 0.9555
     }
   },
   {
     "project": "06_funil_marketing",
     "status": "ok",
     "quality": {
-      "rows": 1200,
+      "rows": 8000,
       "columns": 17,
       "duplicate_ids": 0,
       "missing_values": 0,
-      "revenue": 733330.58,
-      "profit": 345620.08
+      "revenue": 61784006.0,
+      "profit": 61776006.0,
+      "source": "Olist Marketing Funnel (dados comerciais reais anonimizados)",
+      "data_mode": "real"
     },
     "metrics": {
-      "accuracy": 0.6533,
-      "roc_auc": 0.7014
+      "accuracy": 0.658,
+      "roc_auc": 0.6743
     }
   },
   {
     "project": "07_propensao_compra",
     "status": "ok",
     "quality": {
-      "rows": 1200,
+      "rows": 25000,
       "columns": 17,
       "duplicate_ids": 0,
       "missing_values": 0,
-      "revenue": 695775.8600000001,
-      "profit": 327553.32000000007
+      "revenue": 6443776.0,
+      "profit": 6379698.0,
+      "source": "UCI Bank Marketing, DOI 10.24432/C5K306",
+      "data_mode": "real"
     },
     "metrics": {
-      "accuracy": 0.6167,
-      "roc_auc": 0.6253
+      "accuracy": 0.8458,
+      "roc_auc": 0.8365
     }
   },
   {
     "project": "08_rentabilidade_comercial",
     "status": "ok",
     "quality": {
-      "rows": 1200,
-      "columns": 17,
+      "rows": 25000,
+      "columns": 37,
       "duplicate_ids": 0,
-      "missing_values": 0,
-      "revenue": 737286.56,
-      "profit": 353090.62
+      "missing_values": 17158,
+      "revenue": 3998247.75,
+      "profit": 3431753.81,
+      "source": "Olist Brazilian E-Commerce (Kaggle, dados comerciais anonimizados)",
+      "data_mode": "real"
     },
     "metrics": {
-      "mae": 53.48
+      "mae": 3.63
     }
   },
   {
     "project": "09_elasticidade_preco",
     "status": "ok",
     "quality": {
-      "rows": 1200,
+      "rows": 25000,
       "columns": 17,
-      "duplicate_ids": 0,
+      "duplicate_ids": 26,
       "missing_values": 0,
-      "revenue": 728717.84,
-      "profit": 335285.51
+      "revenue": 484781.36,
+      "profit": 169673.476,
+      "source": "UCI Online Retail, transa\u00e7\u00f5es reais de varejo brit\u00e2nico",
+      "data_mode": "real"
     },
     "metrics": {
-      "mae": 55.28
+      "mae": 1.16
     }
   },
   {
     "project": "10_demanda_estoque",
     "status": "ok",
     "quality": {
-      "rows": 1200,
+      "rows": 25000,
       "columns": 17,
-      "duplicate_ids": 0,
+      "duplicate_ids": 27,
       "missing_values": 0,
-      "revenue": 750298.79,
-      "profit": 368776.45
+      "revenue": 477432.19999999995,
+      "profit": 167101.27,
+      "source": "UCI Online Retail, transa\u00e7\u00f5es reais de varejo brit\u00e2nico",
+      "data_mode": "real"
     },
     "metrics": {
-      "mae": 63.34
+      "mae": 0.27
     }
   },
   {
     "project": "11_cesta_compras",
     "status": "ok",
     "quality": {
-      "rows": 1200,
-      "columns": 17,
+      "rows": 25000,
+      "columns": 37,
       "duplicate_ids": 0,
-      "missing_values": 0,
-      "revenue": 734164.76,
-      "profit": 351814.20999999996
+      "missing_values": 17174,
+      "revenue": 3989670.46,
+      "profit": 3421463.24,
+      "source": "Olist Brazilian E-Commerce (Kaggle, dados comerciais anonimizados)",
+      "data_mode": "real"
     },
     "metrics": {
-      "accuracy": 0.6033,
-      "roc_auc": 0.6366
+      "accuracy": 0.9826,
+      "roc_auc": 0.9729
     }
   },
   {
     "project": "12_voz_cliente",
     "status": "ok",
     "quality": {
-      "rows": 1200,
-      "columns": 17,
+      "rows": 25000,
+      "columns": 37,
       "duplicate_ids": 0,
-      "missing_values": 0,
-      "revenue": 711449.27,
-      "profit": 317743.06000000006
+      "missing_values": 17340,
+      "revenue": 4004930.75,
+      "profit": 3445870.85,
+      "source": "Olist Brazilian E-Commerce (Kaggle, dados comerciais anonimizados)",
+      "data_mode": "real"
     },
     "metrics": {
-      "accuracy": 0.57,
-      "roc_auc": 0.6029
+      "accuracy": 0.8542,
+      "roc_auc": 0.8191
     }
   },
   {
     "project": "13_people_analytics",
     "status": "ok",
     "quality": {
-      "rows": 1200,
+      "rows": 740,
       "columns": 17,
-      "duplicate_ids": 0,
+      "duplicate_ids": 704,
       "missing_values": 0,
-      "revenue": 732935.47,
-      "profit": 330163.6
+      "revenue": 200902.774,
+      "profit": 37118.774,
+      "source": "UCI Absenteeism at Work, registros reais de uma empresa brasileira",
+      "data_mode": "real"
     },
     "metrics": {
-      "accuracy": 0.61,
-      "roc_auc": 0.6421
+      "accuracy": 0.7459,
+      "roc_auc": 0.8445
     }
   },
   {
     "project": "14_inadimplencia",
     "status": "ok",
     "quality": {
-      "rows": 1200,
+      "rows": 184,
       "columns": 17,
       "duplicate_ids": 0,
       "missing_values": 0,
-      "revenue": 734230.81,
-      "profit": 337079.42
+      "revenue": 605.47,
+      "profit": -605.47,
+      "source": "Banco Central do Brasil, SGS s\u00e9rie 21082",
+      "data_mode": "real"
     },
     "metrics": {
-      "mae": 51.73
+      "mae": 0.01
     }
   },
   {
     "project": "15_mobilidade_urbana",
     "status": "ok",
     "quality": {
-      "rows": 1200,
+      "rows": 25000,
       "columns": 17,
       "duplicate_ids": 0,
       "missing_values": 0,
-      "revenue": 721142.1399999999,
-      "profit": 338069.94000000006
+      "revenue": 629659.22,
+      "profit": 405431.39,
+      "source": "NYC TLC Yellow Taxi Trip Records, janeiro de 2025",
+      "data_mode": "real"
     },
     "metrics": {
-      "mae": 62.19
+      "mae": 1.67
     }
   },
   {
     "project": "16_bicicletas_compartilhadas",
     "status": "ok",
     "quality": {
-      "rows": 1200,
+      "rows": 25000,
       "columns": 17,
       "duplicate_ids": 0,
       "missing_values": 0,
-      "revenue": 697297.62,
-      "profit": 309605.53
+      "revenue": 37070.980336666675,
+      "profit": 27803.235252500002,
+      "source": "Citi Bike System Data, Jersey City, janeiro de 2025",
+      "data_mode": "real"
     },
     "metrics": {
-      "mae": 57.21
+      "mae": 0.07
     }
   },
   {
     "project": "17_analytics_digital",
     "status": "ok",
     "quality": {
-      "rows": 1200,
+      "rows": 8000,
       "columns": 17,
       "duplicate_ids": 0,
       "missing_values": 0,
-      "revenue": 716596.88,
-      "profit": 327211.78
+      "revenue": 61784006.0,
+      "profit": 61776006.0,
+      "source": "Olist Marketing Funnel (dados comerciais reais anonimizados)",
+      "data_mode": "real"
     },
     "metrics": {
-      "accuracy": 0.5767,
-      "roc_auc": 0.579
+      "accuracy": 0.639,
+      "roc_auc": 0.6557
     }
   },
   {
     "project": "18_saude_publica",
     "status": "ok",
     "quality": {
-      "rows": 1200,
+      "rows": 65,
       "columns": 17,
       "duplicate_ids": 0,
-      "missing_values": 0,
-      "revenue": 712827.24,
-      "profit": 305966.85
+      "missing_values": 1,
+      "revenue": 4295.5,
+      "profit": -4295.5,
+      "source": "World Bank API, mortalidade infantil no Brasil (SH.DYN.MORT)",
+      "data_mode": "real"
     },
     "metrics": {
-      "mae": 66.49
+      "mae": 1.72
     }
   },
   {
     "project": "19_anomalias_financeiras",
     "status": "ok",
     "quality": {
-      "rows": 1200,
+      "rows": 25000,
       "columns": 17,
       "duplicate_ids": 0,
       "missing_values": 0,
-      "revenue": 718409.1599999999,
-      "profit": 322919.81
+      "revenue": 4180752000.0,
+      "profit": -1139325714.0,
+      "source": "UCI Default of Credit Card Clients, DOI 10.24432/C55S3H",
+      "data_mode": "real"
     },
     "metrics": {
-      "accuracy": 0.63,
-      "roc_auc": 0.674
+      "accuracy": 0.7538,
+      "roc_auc": 0.7039
     }
   },
   {
     "project": "20_pipeline_empresarial",
     "status": "ok",
     "quality": {
-      "rows": 1200,
-      "columns": 17,
+      "rows": 25000,
+      "columns": 37,
       "duplicate_ids": 0,
-      "missing_values": 0,
-      "revenue": 727398.51,
-      "profit": 352571.15
+      "missing_values": 17064,
+      "revenue": 4016560.5700000003,
+      "profit": 3451358.11,
+      "source": "Olist Brazilian E-Commerce (Kaggle, dados comerciais anonimizados)",
+      "data_mode": "real"
     },
     "metrics": {
-      "accuracy": 0.5867,
-      "roc_auc": 0.6276
+      "accuracy": 0.9738,
+      "roc_auc": 0.8944
     }
   }
 ]

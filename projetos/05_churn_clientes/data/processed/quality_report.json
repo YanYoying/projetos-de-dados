@@ -1,8 +1,10 @@
 {
-  "rows": 1200,
+  "rows": 3150,
   "columns": 17,
   "duplicate_ids": 0,
   "missing_values": 0,
-  "revenue": 750131.7999999999,
-  "profit": 357275.58999999997
+  "revenue": 2970.0,
+  "profit": 2729.0,
+  "source": "UCI Iranian Churn Dataset, dados reais de uma operadora",
+  "data_mode": "real"
 }

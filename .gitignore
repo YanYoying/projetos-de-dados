@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
+data_sources/
 .streamlit/secrets.toml
 projetos/*/data/processed/*.csv
 projetos/*/artifacts/*.joblib

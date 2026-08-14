@@ -12,6 +12,7 @@ from sklearn.metrics import accuracy_score, mean_absolute_error, roc_auc_score
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
+from src.real_sources import load_real_data
 
 
 def load_config(project_dir: Path) -> dict:
@@ -47,7 +48,9 @@ def run_pipeline(project_dir: Path) -> dict:
     config = load_config(project_dir)
     output = project_dir / "data" / "processed"
     output.mkdir(parents=True, exist_ok=True)
-    df = generate_demo_data(config)
+    df, source = load_real_data(project_dir.name)
+    if len(df) > 25_000:
+        df = df.sample(25_000, random_state=config["seed"]).sort_values("date").reset_index(drop=True)
     df["margin_pct"] = np.where(df.revenue != 0, 100 * df.profit / df.revenue, 0).round(2)
     df["month"] = pd.to_datetime(df.date).dt.to_period("M").astype(str)
     df.to_csv(output / "analytics.csv", index=False)
@@ -56,6 +59,7 @@ def run_pipeline(project_dir: Path) -> dict:
         "duplicate_ids": int(df.record_id.duplicated().sum()),
         "missing_values": int(df.isna().sum().sum()),
         "revenue": float(df.revenue.sum()), "profit": float(df.profit.sum()),
+        "source": source, "data_mode": "real",
     }
     (output / "quality_report.json").write_text(json.dumps(quality, indent=2), encoding="utf-8")
     return quality
@@ -68,6 +72,8 @@ def train_model(project_dir: Path) -> dict:
         run_pipeline(project_dir)
     df = pd.read_csv(data_path)
     features = ["region", "category", "channel", "quantity", "unit_value", "cost", "engagement", "delay_days", "satisfaction"]
+    if project_dir.name == "12_voz_cliente":
+        features.remove("satisfaction")
     categorical = ["region", "category", "channel"]
     numeric = [c for c in features if c not in categorical]
     preprocessor = ColumnTransformer([
@@ -76,7 +82,7 @@ def train_model(project_dir: Path) -> dict:
     ])
     classification = config["model_type"] == "classification"
     target = "target_class" if classification else "target_value"
-    estimator = RandomForestClassifier(n_estimators=80, random_state=config["seed"], class_weight="balanced") if classification else RandomForestRegressor(n_estimators=80, random_state=config["seed"], n_jobs=-1)
+    estimator = RandomForestClassifier(n_estimators=60, random_state=config["seed"], class_weight="balanced", n_jobs=-1) if classification else RandomForestRegressor(n_estimators=60, random_state=config["seed"], n_jobs=-1)
     model = Pipeline([("preprocess", preprocessor), ("model", estimator)])
     X_train, X_test, y_train, y_test = train_test_split(df[features], df[target], test_size=.25, random_state=config["seed"], stratify=df[target] if classification else None)
     model.fit(X_train, y_train)
@@ -101,7 +107,9 @@ def render_dashboard(project_dir: Path) -> None:
     path = project_dir / "data" / "processed" / "analytics.csv"
     if not path.exists():
         run_pipeline(project_dir)
-    df = pd.read_csv(path, parse_dates=["date"])
+    df = pd.read_csv(path)
+    df["date"] = pd.to_datetime(df["date"], errors="coerce", format="mixed")
+    df = df.dropna(subset=["date"])
     st.set_page_config(page_title=config["title"], layout="wide")
     st.title(config["title"])
     st.caption(config["business_question"])
