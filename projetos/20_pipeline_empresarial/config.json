@@ -1,0 +1,9 @@
+{
+  "title": "Pipeline empresarial",
+  "business_question": "Como entregar indicadores confiáveis e atualizados?",
+  "model_type": "classification",
+  "source": "Olist SQLite",
+  "seed": 120,
+  "target_label": "Taxa do indicador",
+  "recommendation": "Monitorar qualidade, linhagem e atualização antes de publicar indicadores."
+}

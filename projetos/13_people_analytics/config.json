@@ -1,0 +1,9 @@
+{
+  "title": "People Analytics",
+  "business_question": "Quais fatores estão associados à saída de funcionários?",
+  "model_type": "classification",
+  "source": "IBM HR Attrition",
+  "seed": 113,
+  "target_label": "Taxa do indicador",
+  "recommendation": "Usar o risco para orientar diagnóstico humano, nunca decisões automáticas de desligamento."
+}

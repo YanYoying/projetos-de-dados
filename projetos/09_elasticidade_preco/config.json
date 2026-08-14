@@ -1,0 +1,9 @@
+{
+  "title": "Elasticidade de preço",
+  "business_question": "Como preço e promoção alteram demanda e margem?",
+  "model_type": "regression",
+  "source": "Kaggle FMCG",
+  "seed": 109,
+  "target_label": "Taxa do indicador",
+  "recommendation": "Testar faixas de preço que maximizem margem, não apenas volume."
+}

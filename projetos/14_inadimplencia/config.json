@@ -1,0 +1,9 @@
+{
+  "title": "Inadimplência",
+  "business_question": "Como o risco da carteira evolui ao longo do tempo?",
+  "model_type": "regression",
+  "source": "Banco Central do Brasil",
+  "seed": 114,
+  "target_label": "Taxa do indicador",
+  "recommendation": "Ajustar provisões e políticas quando tendência e cenário macro indicarem deterioração."
+}

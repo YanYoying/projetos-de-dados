@@ -1,0 +1,9 @@
+{
+  "title": "Bicicletas compartilhadas",
+  "business_question": "Quais estações precisam de rebalanceamento?",
+  "model_type": "regression",
+  "source": "BigQuery Citi Bike",
+  "seed": 116,
+  "target_label": "Taxa do indicador",
+  "recommendation": "Rebalancear estações antes dos picos previstos, minimizando viagens operacionais."
+}

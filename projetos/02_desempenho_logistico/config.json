@@ -1,0 +1,9 @@
+{
+  "title": "Desempenho logístico",
+  "business_question": "Onde estão os atrasos e como eles afetam satisfação e recompra?",
+  "model_type": "regression",
+  "source": "Olist",
+  "seed": 102,
+  "target_label": "Taxa do indicador",
+  "recommendation": "Priorizar rotas com alto volume, atraso acima do SLA e queda de satisfação."
+}

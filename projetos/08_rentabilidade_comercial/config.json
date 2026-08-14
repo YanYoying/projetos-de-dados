@@ -1,0 +1,9 @@
+{
+  "title": "Rentabilidade comercial",
+  "business_question": "Quais produtos vendem muito, mas reduzem a margem?",
+  "model_type": "regression",
+  "source": "Tableau Superstore",
+  "seed": 108,
+  "target_label": "Taxa do indicador",
+  "recommendation": "Rever descontos de itens com grande receita e lucro baixo ou negativo."
+}

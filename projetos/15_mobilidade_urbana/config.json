@@ -1,0 +1,9 @@
+{
+  "title": "Mobilidade urbana",
+  "business_question": "Onde e quando existe maior demanda por transporte?",
+  "model_type": "regression",
+  "source": "NYC TLC",
+  "seed": 115,
+  "target_label": "Taxa do indicador",
+  "recommendation": "Reposicionar oferta para zonas e horários de demanda recorrente."
+}

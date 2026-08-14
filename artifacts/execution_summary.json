@@ -1,0 +1,312 @@
+[
+  {
+    "project": "01_ecommerce_360",
+    "status": "ok",
+    "quality": {
+      "rows": 1200,
+      "columns": 17,
+      "duplicate_ids": 0,
+      "missing_values": 0,
+      "revenue": 731395.1799999999,
+      "profit": 334644.6
+    },
+    "metrics": {
+      "mae": 57.42
+    }
+  },
+  {
+    "project": "02_desempenho_logistico",
+    "status": "ok",
+    "quality": {
+      "rows": 1200,
+      "columns": 17,
+      "duplicate_ids": 0,
+      "missing_values": 0,
+      "revenue": 714013.51,
+      "profit": 332107.17
+    },
+    "metrics": {
+      "mae": 62.25
+    }
+  },
+  {
+    "project": "03_segmentacao_rfm",
+    "status": "ok",
+    "quality": {
+      "rows": 1200,
+      "columns": 17,
+      "duplicate_ids": 0,
+      "missing_values": 0,
+      "revenue": 711043.4,
+      "profit": 340261.65
+    },
+    "metrics": {
+      "accuracy": 0.6,
+      "roc_auc": 0.6236
+    }
+  },
+  {
+    "project": "04_previsao_vendas",
+    "status": "ok",
+    "quality": {
+      "rows": 1200,
+      "columns": 17,
+      "duplicate_ids": 0,
+      "missing_values": 0,
+      "revenue": 707892.1599999999,
+      "profit": 333595.56
+    },
+    "metrics": {
+      "mae": 52.22
+    }
+  },
+  {
+    "project": "05_churn_clientes",
+    "status": "ok",
+    "quality": {
+      "rows": 1200,
+      "columns": 17,
+      "duplicate_ids": 0,
+      "missing_values": 0,
+      "revenue": 750131.7999999999,
+      "profit": 357275.58999999997
+    },
+    "metrics": {
+      "accuracy": 0.5833,
+      "roc_auc": 0.6425
+    }
+  },
+  {
+    "project": "06_funil_marketing",
+    "status": "ok",
+    "quality": {
+      "rows": 1200,
+      "columns": 17,
+      "duplicate_ids": 0,
+      "missing_values": 0,
+      "revenue": 733330.58,
+      "profit": 345620.08
+    },
+    "metrics": {
+      "accuracy": 0.6533,
+      "roc_auc": 0.7014
+    }
+  },
+  {
+    "project": "07_propensao_compra",
+    "status": "ok",
+    "quality": {
+      "rows": 1200,
+      "columns": 17,
+      "duplicate_ids": 0,
+      "missing_values": 0,
+      "revenue": 695775.8600000001,
+      "profit": 327553.32000000007
+    },
+    "metrics": {
+      "accuracy": 0.6167,
+      "roc_auc": 0.6253
+    }
+  },
+  {
+    "project": "08_rentabilidade_comercial",
+    "status": "ok",
+    "quality": {
+      "rows": 1200,
+      "columns": 17,
+      "duplicate_ids": 0,
+      "missing_values": 0,
+      "revenue": 737286.56,
+      "profit": 353090.62
+    },
+    "metrics": {
+      "mae": 53.48
+    }
+  },
+  {
+    "project": "09_elasticidade_preco",
+    "status": "ok",
+    "quality": {
+      "rows": 1200,
+      "columns": 17,
+      "duplicate_ids": 0,
+      "missing_values": 0,
+      "revenue": 728717.84,
+      "profit": 335285.51
+    },
+    "metrics": {
+      "mae": 55.28
+    }
+  },
+  {
+    "project": "10_demanda_estoque",
+    "status": "ok",
+    "quality": {
+      "rows": 1200,
+      "columns": 17,
+      "duplicate_ids": 0,
+      "missing_values": 0,
+      "revenue": 750298.79,
+      "profit": 368776.45
+    },
+    "metrics": {
+      "mae": 63.34
+    }
+  },
+  {
+    "project": "11_cesta_compras",
+    "status": "ok",
+    "quality": {
+      "rows": 1200,
+      "columns": 17,
+      "duplicate_ids": 0,
+      "missing_values": 0,
+      "revenue": 734164.76,
+      "profit": 351814.20999999996
+    },
+    "metrics": {
+      "accuracy": 0.6033,
+      "roc_auc": 0.6366
+    }
+  },
+  {
+    "project": "12_voz_cliente",
+    "status": "ok",
+    "quality": {
+      "rows": 1200,
+      "columns": 17,
+      "duplicate_ids": 0,
+      "missing_values": 0,
+      "revenue": 711449.27,
+      "profit": 317743.06000000006
+    },
+    "metrics": {
+      "accuracy": 0.57,
+      "roc_auc": 0.6029
+    }
+  },
+  {
+    "project": "13_people_analytics",
+    "status": "ok",
+    "quality": {
+      "rows": 1200,
+      "columns": 17,
+      "duplicate_ids": 0,
+      "missing_values": 0,
+      "revenue": 732935.47,
+      "profit": 330163.6
+    },
+    "metrics": {
+      "accuracy": 0.61,
+      "roc_auc": 0.6421
+    }
+  },
+  {
+    "project": "14_inadimplencia",
+    "status": "ok",
+    "quality": {
+      "rows": 1200,
+      "columns": 17,
+      "duplicate_ids": 0,
+      "missing_values": 0,
+      "revenue": 734230.81,
+      "profit": 337079.42
+    },
+    "metrics": {
+      "mae": 51.73
+    }
+  },
+  {
+    "project": "15_mobilidade_urbana",
+    "status": "ok",
+    "quality": {
+      "rows": 1200,
+      "columns": 17,
+      "duplicate_ids": 0,
+      "missing_values": 0,
+      "revenue": 721142.1399999999,
+      "profit": 338069.94000000006
+    },
+    "metrics": {
+      "mae": 62.19
+    }
+  },
+  {
+    "project": "16_bicicletas_compartilhadas",
+    "status": "ok",
+    "quality": {
+      "rows": 1200,
+      "columns": 17,
+      "duplicate_ids": 0,
+      "missing_values": 0,
+      "revenue": 697297.62,
+      "profit": 309605.53
+    },
+    "metrics": {
+      "mae": 57.21
+    }
+  },
+  {
+    "project": "17_analytics_digital",
+    "status": "ok",
+    "quality": {
+      "rows": 1200,
+      "columns": 17,
+      "duplicate_ids": 0,
+      "missing_values": 0,
+      "revenue": 716596.88,
+      "profit": 327211.78
+    },
+    "metrics": {
+      "accuracy": 0.5767,
+      "roc_auc": 0.579
+    }
+  },
+  {
+    "project": "18_saude_publica",
+    "status": "ok",
+    "quality": {
+      "rows": 1200,
+      "columns": 17,
+      "duplicate_ids": 0,
+      "missing_values": 0,
+      "revenue": 712827.24,
+      "profit": 305966.85
+    },
+    "metrics": {
+      "mae": 66.49
+    }
+  },
+  {
+    "project": "19_anomalias_financeiras",
+    "status": "ok",
+    "quality": {
+      "rows": 1200,
+      "columns": 17,
+      "duplicate_ids": 0,
+      "missing_values": 0,
+      "revenue": 718409.1599999999,
+      "profit": 322919.81
+    },
+    "metrics": {
+      "accuracy": 0.63,
+      "roc_auc": 0.674
+    }
+  },
+  {
+    "project": "20_pipeline_empresarial",
+    "status": "ok",
+    "quality": {
+      "rows": 1200,
+      "columns": 17,
+      "duplicate_ids": 0,
+      "missing_values": 0,
+      "revenue": 727398.51,
+      "profit": 352571.15
+    },
+    "metrics": {
+      "accuracy": 0.5867,
+      "roc_auc": 0.6276
+    }
+  }
+]

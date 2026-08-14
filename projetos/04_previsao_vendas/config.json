@@ -1,0 +1,9 @@
+{
+  "title": "Previsão de vendas",
+  "business_question": "Quanto será vendido por período, categoria e região?",
+  "model_type": "regression",
+  "source": "Olist",
+  "seed": 104,
+  "target_label": "Taxa do indicador",
+  "recommendation": "Usar a previsão para ajustar metas, compras e capacidade operacional."
+}

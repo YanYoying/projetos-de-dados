@@ -1,0 +1,9 @@
+{
+  "title": "Saúde pública",
+  "business_question": "Quais territórios e grupos precisam de maior atenção?",
+  "model_type": "regression",
+  "source": "Dados Abertos do SUS",
+  "seed": 118,
+  "target_label": "Taxa do indicador",
+  "recommendation": "Priorizar investigação territorial com taxas ajustadas por população."
+}

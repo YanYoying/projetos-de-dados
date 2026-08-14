@@ -1,0 +1,9 @@
+{
+  "title": "Voz do cliente",
+  "business_question": "Quais causas estão associadas às avaliações negativas?",
+  "model_type": "classification",
+  "source": "Olist Reviews",
+  "seed": 112,
+  "target_label": "Taxa do indicador",
+  "recommendation": "Atacar os temas recorrentes com maior impacto em satisfação e receita."
+}

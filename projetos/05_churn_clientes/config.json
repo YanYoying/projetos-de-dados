@@ -1,0 +1,9 @@
+{
+  "title": "Churn de clientes",
+  "business_question": "Quais clientes têm maior risco de abandonar a empresa?",
+  "model_type": "classification",
+  "source": "Kaggle E-commerce Churn",
+  "seed": 105,
+  "target_label": "Taxa do indicador",
+  "recommendation": "Acionar retenção apenas quando valor esperado superar o custo do incentivo."
+}

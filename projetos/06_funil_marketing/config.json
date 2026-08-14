@@ -1,0 +1,9 @@
+{
+  "title": "Funil de marketing",
+  "business_question": "Quais canais entregam conversão e retorno sobre investimento?",
+  "model_type": "classification",
+  "source": "Kaggle Sales & Marketing",
+  "seed": 106,
+  "target_label": "Taxa do indicador",
+  "recommendation": "Realocar verba de canais com CAC alto para canais de maior conversão e LTV."
+}

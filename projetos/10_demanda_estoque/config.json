@@ -1,0 +1,9 @@
+{
+  "title": "Demanda e estoque",
+  "business_question": "Quais itens correm risco de ruptura ou excesso?",
+  "model_type": "regression",
+  "source": "Kaggle FMCG",
+  "seed": 110,
+  "target_label": "Taxa do indicador",
+  "recommendation": "Definir estoque de segurança por volatilidade e tempo de reposição."
+}

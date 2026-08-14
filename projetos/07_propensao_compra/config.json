@@ -1,0 +1,9 @@
+{
+  "title": "Propensão à compra",
+  "business_question": "Quem tem maior chance de aceitar uma oferta?",
+  "model_type": "classification",
+  "source": "UCI Bank Marketing",
+  "seed": 107,
+  "target_label": "Taxa do indicador",
+  "recommendation": "Ordenar contatos por propensão e limitar campanhas de baixo retorno."
+}

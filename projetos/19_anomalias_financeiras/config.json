@@ -1,0 +1,9 @@
+{
+  "title": "Anomalias financeiras",
+  "business_question": "Quais transações apresentam comportamento suspeito?",
+  "model_type": "classification",
+  "source": "UCI/Kaggle",
+  "seed": 119,
+  "target_label": "Taxa do indicador",
+  "recommendation": "Revisar alertas por risco e valor, calibrando o custo de falsos positivos."
+}

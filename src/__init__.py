@@ -1,0 +1,2 @@
+"""Componentes compartilhados do portfólio."""
+

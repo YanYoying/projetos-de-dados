@@ -1,0 +1,9 @@
+{
+  "title": "Segmentação RFM",
+  "business_question": "Quais clientes são valiosos, promissores ou estão em risco?",
+  "model_type": "classification",
+  "source": "Olist",
+  "seed": 103,
+  "target_label": "Taxa do indicador",
+  "recommendation": "Aplicar campanhas distintas para clientes VIP, promissores e em risco."
+}

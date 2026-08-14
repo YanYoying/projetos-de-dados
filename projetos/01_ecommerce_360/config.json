@@ -1,0 +1,9 @@
+{
+  "title": "E-commerce 360°",
+  "business_question": "Quais produtos, vendedores e regiões sustentam receita, margem e satisfação?",
+  "model_type": "regression",
+  "source": "Olist",
+  "seed": 101,
+  "target_label": "Taxa do indicador",
+  "recommendation": "Concentrar investimento nas combinações de categoria e região com margem positiva e alta satisfação."
+}

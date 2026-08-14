@@ -1,0 +1,9 @@
+{
+  "title": "Cesta de compras",
+  "business_question": "Quais produtos apresentam maior afinidade de compra?",
+  "model_type": "classification",
+  "source": "Olist",
+  "seed": 111,
+  "target_label": "Taxa do indicador",
+  "recommendation": "Criar combos somente quando lift e margem incremental forem positivos."
+}

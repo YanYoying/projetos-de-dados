@@ -1,0 +1,9 @@
+{
+  "title": "Analytics digital",
+  "business_question": "Quais canais e páginas contribuem para conversão?",
+  "model_type": "classification",
+  "source": "Google Analytics Sample",
+  "seed": 117,
+  "target_label": "Taxa do indicador",
+  "recommendation": "Otimizar etapas com maior abandono e avaliar canais por receita incremental."
+}
