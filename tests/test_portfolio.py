@@ -21,3 +21,9 @@ def test_demo_data_contract():
     assert {"revenue", "profit", "target_class", "target_value"}.issubset(df.columns)
     assert df.record_id.is_unique
 
+
+def test_all_python_deliverables_compile():
+    for project in sorted((ROOT / "projetos").iterdir()):
+        for filename in ("pipeline.py", "model.py", "dashboard.py"):
+            source = (project / filename).read_text(encoding="utf-8")
+            compile(source, str(project / filename), "exec")

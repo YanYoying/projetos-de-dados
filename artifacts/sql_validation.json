@@ -1,0 +1,322 @@
+[
+  {
+    "project": "01_ecommerce_360",
+    "rows": 428,
+    "columns": [
+      "month",
+      "region",
+      "category",
+      "revenue",
+      "profit",
+      "satisfaction",
+      "previous_revenue",
+      "profit_rank",
+      "revenue_growth_pct",
+      "margin_pct"
+    ]
+  },
+  {
+    "project": "02_desempenho_logistico",
+    "rows": 426,
+    "columns": [
+      "month",
+      "region",
+      "category",
+      "revenue",
+      "profit",
+      "satisfaction",
+      "previous_revenue",
+      "profit_rank",
+      "revenue_growth_pct",
+      "margin_pct"
+    ]
+  },
+  {
+    "project": "03_segmentacao_rfm",
+    "rows": 415,
+    "columns": [
+      "month",
+      "region",
+      "category",
+      "revenue",
+      "profit",
+      "satisfaction",
+      "previous_revenue",
+      "profit_rank",
+      "revenue_growth_pct",
+      "margin_pct"
+    ]
+  },
+  {
+    "project": "04_previsao_vendas",
+    "rows": 421,
+    "columns": [
+      "month",
+      "region",
+      "category",
+      "revenue",
+      "profit",
+      "satisfaction",
+      "previous_revenue",
+      "profit_rank",
+      "revenue_growth_pct",
+      "margin_pct"
+    ]
+  },
+  {
+    "project": "05_churn_clientes",
+    "rows": 424,
+    "columns": [
+      "month",
+      "region",
+      "category",
+      "revenue",
+      "profit",
+      "satisfaction",
+      "previous_revenue",
+      "profit_rank",
+      "revenue_growth_pct",
+      "margin_pct"
+    ]
+  },
+  {
+    "project": "06_funil_marketing",
+    "rows": 418,
+    "columns": [
+      "month",
+      "region",
+      "category",
+      "revenue",
+      "profit",
+      "satisfaction",
+      "previous_revenue",
+      "profit_rank",
+      "revenue_growth_pct",
+      "margin_pct"
+    ]
+  },
+  {
+    "project": "07_propensao_compra",
+    "rows": 419,
+    "columns": [
+      "month",
+      "region",
+      "category",
+      "revenue",
+      "profit",
+      "satisfaction",
+      "previous_revenue",
+      "profit_rank",
+      "revenue_growth_pct",
+      "margin_pct"
+    ]
+  },
+  {
+    "project": "08_rentabilidade_comercial",
+    "rows": 424,
+    "columns": [
+      "month",
+      "region",
+      "category",
+      "revenue",
+      "profit",
+      "satisfaction",
+      "previous_revenue",
+      "profit_rank",
+      "revenue_growth_pct",
+      "margin_pct"
+    ]
+  },
+  {
+    "project": "09_elasticidade_preco",
+    "rows": 435,
+    "columns": [
+      "month",
+      "region",
+      "category",
+      "revenue",
+      "profit",
+      "satisfaction",
+      "previous_revenue",
+      "profit_rank",
+      "revenue_growth_pct",
+      "margin_pct"
+    ]
+  },
+  {
+    "project": "10_demanda_estoque",
+    "rows": 429,
+    "columns": [
+      "month",
+      "region",
+      "category",
+      "revenue",
+      "profit",
+      "satisfaction",
+      "previous_revenue",
+      "profit_rank",
+      "revenue_growth_pct",
+      "margin_pct"
+    ]
+  },
+  {
+    "project": "11_cesta_compras",
+    "rows": 411,
+    "columns": [
+      "month",
+      "region",
+      "category",
+      "revenue",
+      "profit",
+      "satisfaction",
+      "previous_revenue",
+      "profit_rank",
+      "revenue_growth_pct",
+      "margin_pct"
+    ]
+  },
+  {
+    "project": "12_voz_cliente",
+    "rows": 425,
+    "columns": [
+      "month",
+      "region",
+      "category",
+      "revenue",
+      "profit",
+      "satisfaction",
+      "previous_revenue",
+      "profit_rank",
+      "revenue_growth_pct",
+      "margin_pct"
+    ]
+  },
+  {
+    "project": "13_people_analytics",
+    "rows": 423,
+    "columns": [
+      "month",
+      "region",
+      "category",
+      "revenue",
+      "profit",
+      "satisfaction",
+      "previous_revenue",
+      "profit_rank",
+      "revenue_growth_pct",
+      "margin_pct"
+    ]
+  },
+  {
+    "project": "14_inadimplencia",
+    "rows": 428,
+    "columns": [
+      "month",
+      "region",
+      "category",
+      "revenue",
+      "profit",
+      "satisfaction",
+      "previous_revenue",
+      "profit_rank",
+      "revenue_growth_pct",
+      "margin_pct"
+    ]
+  },
+  {
+    "project": "15_mobilidade_urbana",
+    "rows": 419,
+    "columns": [
+      "month",
+      "region",
+      "category",
+      "revenue",
+      "profit",
+      "satisfaction",
+      "previous_revenue",
+      "profit_rank",
+      "revenue_growth_pct",
+      "margin_pct"
+    ]
+  },
+  {
+    "project": "16_bicicletas_compartilhadas",
+    "rows": 420,
+    "columns": [
+      "month",
+      "region",
+      "category",
+      "revenue",
+      "profit",
+      "satisfaction",
+      "previous_revenue",
+      "profit_rank",
+      "revenue_growth_pct",
+      "margin_pct"
+    ]
+  },
+  {
+    "project": "17_analytics_digital",
+    "rows": 426,
+    "columns": [
+      "month",
+      "region",
+      "category",
+      "revenue",
+      "profit",
+      "satisfaction",
+      "previous_revenue",
+      "profit_rank",
+      "revenue_growth_pct",
+      "margin_pct"
+    ]
+  },
+  {
+    "project": "18_saude_publica",
+    "rows": 424,
+    "columns": [
+      "month",
+      "region",
+      "category",
+      "revenue",
+      "profit",
+      "satisfaction",
+      "previous_revenue",
+      "profit_rank",
+      "revenue_growth_pct",
+      "margin_pct"
+    ]
+  },
+  {
+    "project": "19_anomalias_financeiras",
+    "rows": 424,
+    "columns": [
+      "month",
+      "region",
+      "category",
+      "revenue",
+      "profit",
+      "satisfaction",
+      "previous_revenue",
+      "profit_rank",
+      "revenue_growth_pct",
+      "margin_pct"
+    ]
+  },
+  {
+    "project": "20_pipeline_empresarial",
+    "rows": 425,
+    "columns": [
+      "month",
+      "region",
+      "category",
+      "revenue",
+      "profit",
+      "satisfaction",
+      "previous_revenue",
+      "profit_rank",
+      "revenue_growth_pct",
+      "margin_pct"
+    ]
+  }
+]

@@ -114,9 +114,8 @@ def render_dashboard(project_dir: Path) -> None:
     c4.metric(config["target_label"], f"{100 * view.target_class.mean():.1f}%")
     monthly = view.set_index("date").resample("ME")[["revenue", "profit"]].sum().reset_index()
     left, right = st.columns(2)
-    left.plotly_chart(px.line(monthly, x="date", y=["revenue", "profit"], title="Evolução mensal"), use_container_width=True)
+    left.plotly_chart(px.line(monthly, x="date", y=["revenue", "profit"], title="Evolução mensal"), width="stretch")
     regional = view.groupby("region", as_index=False)[["revenue", "profit"]].sum()
-    right.plotly_chart(px.bar(regional, x="region", y="profit", color="revenue", title="Resultado por região"), use_container_width=True)
+    right.plotly_chart(px.bar(regional, x="region", y="profit", color="revenue", title="Resultado por região"), width="stretch")
     st.subheader("Recomendação executiva")
     st.info(config["recommendation"])
-

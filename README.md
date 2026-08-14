@@ -15,6 +15,7 @@ python -m venv .venv
 .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 python scripts/run_all.py
+python scripts/validate_sql.py
 streamlit run projetos/01_ecommerce_360/dashboard.py
 ```
 
@@ -61,4 +62,8 @@ artifacts/        modelo e métricas
 ## Validação
 
 `python scripts/run_all.py` executa os pipelines e modelos dos 20 projetos e grava um resumo em `artifacts/execution_summary.json`.
+
+`python scripts/validate_sql.py` executa as vinte análises SQL no DuckDB e confirma que todas produzem resultados.
+
+Consulte [FONTES.md](FONTES.md) para baixar as bases reais e conferir licença, origem e finalidade de cada conjunto.
 
