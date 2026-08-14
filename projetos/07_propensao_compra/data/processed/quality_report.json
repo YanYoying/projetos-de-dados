@@ -1,8 +1,10 @@
 {
-  "rows": 1200,
+  "rows": 25000,
   "columns": 17,
   "duplicate_ids": 0,
   "missing_values": 0,
-  "revenue": 695775.8600000001,
-  "profit": 327553.32000000007
+  "revenue": 6443776.0,
+  "profit": 6379698.0,
+  "source": "UCI Bank Marketing, DOI 10.24432/C5K306",
+  "data_mode": "real"
 }

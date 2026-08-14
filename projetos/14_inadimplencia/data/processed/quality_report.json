@@ -1,8 +1,10 @@
 {
-  "rows": 1200,
+  "rows": 184,
   "columns": 17,
   "duplicate_ids": 0,
   "missing_values": 0,
-  "revenue": 734230.81,
-  "profit": 337079.42
+  "revenue": 605.47,
+  "profit": -605.47,
+  "source": "Banco Central do Brasil, SGS s\u00e9rie 21082",
+  "data_mode": "real"
 }

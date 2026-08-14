@@ -1,8 +1,10 @@
 {
-  "rows": 1200,
+  "rows": 25000,
   "columns": 17,
   "duplicate_ids": 0,
   "missing_values": 0,
-  "revenue": 721142.1399999999,
-  "profit": 338069.94000000006
+  "revenue": 629659.22,
+  "profit": 405431.39,
+  "source": "NYC TLC Yellow Taxi Trip Records, janeiro de 2025",
+  "data_mode": "real"
 }

@@ -1,7 +1,7 @@
 [
   {
     "project": "01_ecommerce_360",
-    "rows": 428,
+    "rows": 6520,
     "columns": [
       "month",
       "region",
@@ -17,7 +17,7 @@
   },
   {
     "project": "02_desempenho_logistico",
-    "rows": 426,
+    "rows": 6549,
     "columns": [
       "month",
       "region",
@@ -33,7 +33,7 @@
   },
   {
     "project": "03_segmentacao_rfm",
-    "rows": 415,
+    "rows": 6447,
     "columns": [
       "month",
       "region",
@@ -49,7 +49,7 @@
   },
   {
     "project": "04_previsao_vendas",
-    "rows": 421,
+    "rows": 6531,
     "columns": [
       "month",
       "region",
@@ -65,7 +65,7 @@
   },
   {
     "project": "05_churn_clientes",
-    "rows": 424,
+    "rows": 4,
     "columns": [
       "month",
       "region",
@@ -81,7 +81,7 @@
   },
   {
     "project": "06_funil_marketing",
-    "rows": 418,
+    "rows": 1121,
     "columns": [
       "month",
       "region",
@@ -97,7 +97,7 @@
   },
   {
     "project": "07_propensao_compra",
-    "rows": 419,
+    "rows": 47,
     "columns": [
       "month",
       "region",
@@ -113,7 +113,7 @@
   },
   {
     "project": "08_rentabilidade_comercial",
-    "rows": 424,
+    "rows": 6486,
     "columns": [
       "month",
       "region",
@@ -129,7 +129,7 @@
   },
   {
     "project": "09_elasticidade_preco",
-    "rows": 435,
+    "rows": 14286,
     "columns": [
       "month",
       "region",
@@ -145,7 +145,7 @@
   },
   {
     "project": "10_demanda_estoque",
-    "rows": 429,
+    "rows": 14324,
     "columns": [
       "month",
       "region",
@@ -161,7 +161,7 @@
   },
   {
     "project": "11_cesta_compras",
-    "rows": 411,
+    "rows": 6500,
     "columns": [
       "month",
       "region",
@@ -177,7 +177,7 @@
   },
   {
     "project": "12_voz_cliente",
-    "rows": 425,
+    "rows": 6542,
     "columns": [
       "month",
       "region",
@@ -193,7 +193,7 @@
   },
   {
     "project": "13_people_analytics",
-    "rows": 423,
+    "rows": 257,
     "columns": [
       "month",
       "region",
@@ -209,7 +209,7 @@
   },
   {
     "project": "14_inadimplencia",
-    "rows": 428,
+    "rows": 184,
     "columns": [
       "month",
       "region",
@@ -225,7 +225,7 @@
   },
   {
     "project": "15_mobilidade_urbana",
-    "rows": 419,
+    "rows": 600,
     "columns": [
       "month",
       "region",
@@ -241,7 +241,7 @@
   },
   {
     "project": "16_bicicletas_compartilhadas",
-    "rows": 420,
+    "rows": 171,
     "columns": [
       "month",
       "region",
@@ -257,7 +257,7 @@
   },
   {
     "project": "17_analytics_digital",
-    "rows": 426,
+    "rows": 1121,
     "columns": [
       "month",
       "region",
@@ -273,7 +273,7 @@
   },
   {
     "project": "18_saude_publica",
-    "rows": 424,
+    "rows": 64,
     "columns": [
       "month",
       "region",
@@ -289,7 +289,7 @@
   },
   {
     "project": "19_anomalias_financeiras",
-    "rows": 424,
+    "rows": 14,
     "columns": [
       "month",
       "region",
@@ -305,7 +305,7 @@
   },
   {
     "project": "20_pipeline_empresarial",
-    "rows": 425,
+    "rows": 6571,
     "columns": [
       "month",
       "region",

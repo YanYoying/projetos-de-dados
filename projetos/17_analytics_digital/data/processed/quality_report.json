@@ -1,8 +1,10 @@
 {
-  "rows": 1200,
+  "rows": 8000,
   "columns": 17,
   "duplicate_ids": 0,
   "missing_values": 0,
-  "revenue": 716596.88,
-  "profit": 327211.78
+  "revenue": 61784006.0,
+  "profit": 61776006.0,
+  "source": "Olist Marketing Funnel (dados comerciais reais anonimizados)",
+  "data_mode": "real"
 }

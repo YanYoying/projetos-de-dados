@@ -14,6 +14,7 @@ Portfólio empresarial com 20 projetos completos de análise de dados. Cada proj
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
+python scripts/acquire_sources.py
 python scripts/run_all.py
 python scripts/validate_sql.py
 streamlit run projetos/01_ecommerce_360/dashboard.py
@@ -66,4 +67,3 @@ artifacts/        modelo e métricas
 `python scripts/validate_sql.py` executa as vinte análises SQL no DuckDB e confirma que todas produzem resultados.
 
 Consulte [FONTES.md](FONTES.md) para baixar as bases reais e conferir licença, origem e finalidade de cada conjunto.
-

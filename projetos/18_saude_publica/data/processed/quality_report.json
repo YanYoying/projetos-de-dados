@@ -1,8 +1,10 @@
 {
-  "rows": 1200,
+  "rows": 65,
   "columns": 17,
   "duplicate_ids": 0,
-  "missing_values": 0,
-  "revenue": 712827.24,
-  "profit": 305966.85
+  "missing_values": 1,
+  "revenue": 4295.5,
+  "profit": -4295.5,
+  "source": "World Bank API, mortalidade infantil no Brasil (SH.DYN.MORT)",
+  "data_mode": "real"
 }

@@ -1,8 +1,10 @@
 {
-  "rows": 1200,
+  "rows": 25000,
   "columns": 17,
   "duplicate_ids": 0,
   "missing_values": 0,
-  "revenue": 718409.1599999999,
-  "profit": 322919.81
+  "revenue": 4180752000.0,
+  "profit": -1139325714.0,
+  "source": "UCI Default of Credit Card Clients, DOI 10.24432/C55S3H",
+  "data_mode": "real"
 }

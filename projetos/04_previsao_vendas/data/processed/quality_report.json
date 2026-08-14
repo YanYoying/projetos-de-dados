@@ -1,8 +1,10 @@
 {
-  "rows": 1200,
-  "columns": 17,
+  "rows": 25000,
+  "columns": 37,
   "duplicate_ids": 0,
-  "missing_values": 0,
-  "revenue": 707892.1599999999,
-  "profit": 333595.56
+  "missing_values": 17132,
+  "revenue": 3999719.25,
+  "profit": 3436467.04,
+  "source": "Olist Brazilian E-Commerce (Kaggle, dados comerciais anonimizados)",
+  "data_mode": "real"
 }

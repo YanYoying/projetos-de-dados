@@ -1,8 +1,10 @@
 {
-  "rows": 1200,
+  "rows": 25000,
   "columns": 17,
-  "duplicate_ids": 0,
+  "duplicate_ids": 26,
   "missing_values": 0,
-  "revenue": 728717.84,
-  "profit": 335285.51
+  "revenue": 484781.36,
+  "profit": 169673.476,
+  "source": "UCI Online Retail, transa\u00e7\u00f5es reais de varejo brit\u00e2nico",
+  "data_mode": "real"
 }
